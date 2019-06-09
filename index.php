@@ -63,7 +63,7 @@
         }
 
         /**
-        Sets body parameter
+        *Sets body parameter
         *@param string $body The article body
         *@return void
          */
