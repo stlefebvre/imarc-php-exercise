@@ -23,6 +23,7 @@
         function set_author($new_author) {
             $this->author = $new_author;
         }
+
         public function get_author() {
             return $this->author;
         }
@@ -83,5 +84,10 @@
         }
     }
 
-    $article = new Article ('Test Title', 'ipsum lorem body text', 'True', 'Stephen King');
-    echo json_encode($article);
+    function newArticle() {
+        $article = new Article ('Test Title', 'ipsum lorem body text', 'True', 'Stephen King');
+        validate($article);
+        echo json_encode($article);
+    }
+    
+    newArticle();
