@@ -86,8 +86,16 @@
 
     function newArticle() {
         $article = new Article ('Test Title', 'ipsum lorem body text', 'True', 'Stephen King');
-        validate($article);
+        validate($article) {
+            if ((setTitle($title) = true) && (getStatus() = true) && ($status === Active) (setAuthor($author) = true)) && ($body != strip_tags($body)) && (strlen($title) =< 80)) {
+                return $article;
+            } else {
+                throw new LogicException("Invalid"); 
+            };
         echo json_encode($article);
     }
     
     newArticle();
+
+
+    
